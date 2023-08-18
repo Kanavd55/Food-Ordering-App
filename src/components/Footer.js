@@ -1,9 +1,9 @@
 import React from 'react'
-import  LOGO_URL  from '../utils/constants'
+import  {LOGO_URL}  from '../utils/constants'
 
 const Footer = () => {
   return (
-    <div className='bg-purple-300'>
+    <div className='bg-purple-300 shadow-inner'>
         <div className='w-10/12 mx-auto h-auto bg-purple-300 flex-wrap items-center flex justify-around'>
         <div className=' w-56 p-1'>
             <div className='flex justify-start'>
@@ -53,7 +53,7 @@ const Footer = () => {
                     6/51,Vijay Nagar,Delhi-110009
                 </li>
                 <li className='m-2'>
-                    9096473197s
+                    9096473197
                 </li>
                 <li className='m-2'>
                     kanavdahat55@gmail.com

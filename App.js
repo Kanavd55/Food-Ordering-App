@@ -1,14 +1,14 @@
 import React from "react"
 import  ReactDOM  from "react-dom/client";
 import Navbar from "./src/components/Navbar";
-import Shimmer from "./src/components/Shimmer";
 import Footer from "./src/components/Footer";
+import Body from "./src/components/Body";
 
 const AppLayout=()=>{
     return(
         <div>
             <Navbar/>
-            <Shimmer/>
+            <Body/>
             <Footer/>
         </div>
     )
