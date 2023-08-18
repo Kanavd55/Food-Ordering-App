@@ -1,5 +1,5 @@
 import React from "react";
-import { LOGO_URL } from "../../utils/constants";
+import LOGO_URL  from "../utils/constants";
 
 const Navbar = () => {
   return (
@@ -16,7 +16,7 @@ const Navbar = () => {
                     About Us
                 </li>
                 <li className="m-4 p-5">
-                    Grocery Mart
+                    Grocery 
                 </li>
                 <li className="m-4 p-5">
                     🔎 Search
