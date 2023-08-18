@@ -1,0 +1,24 @@
+{
+  "name": "food-app",
+  "version": "1.0.0",
+  "description": "Food Ordering App using react",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "React",
+    "Food",
+    "App"
+  ],
+  "author": "Kanav Dahat",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  }
+}
