@@ -10,20 +10,20 @@ const Navbar = () => {
         </div>
         <div className="flex items-center">
             <ul className="flex font-light text-xl">
-                <li className="m-4 p-5">
+                <li className="m-4 p-5  hover:text-orange-600">
                     <Link to="/">Home</Link>
                 </li>
-                <li className="m-4 p-5">
+                <li className="m-4 p-5  hover:text-orange-600">
                 <Link to="/about">About Us</Link>
                 </li>
-                <li className="m-4 p-5">
+                <li className="m-4 p-5  hover:text-orange-600">
                 <Link to="/grocery">Grocery</Link> 
                 </li>
-                <li className="m-4 p-5">
+                <li className="m-4 p-5  hover:text-orange-600">
                 <Link to="/careers">Careers</Link>
                 </li>
-                <li className="m-4 p-5">
-                    <Link to="/cart">🛒 Cart</Link> 
+                <li className="m-4 p-5 hover:text-orange-600">
+                    <Link to="/cart" >🛒 Cart</Link> 
                 </li>
             </ul>
         </div>    

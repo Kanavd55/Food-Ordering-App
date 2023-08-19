@@ -6,7 +6,7 @@ const BodyHeader = (props) => {
 
   return (
     <div className='flex flex-wrap justify-between shadow-lg rounded-3xl p-4'>
-          <div className="cursor-pointer" onClick={()=>{
+          <div className="cursor-pointer hover:text-orange-400" onClick={()=>{
             setFilteredList(listOfRestaurant.filter((res)=>{
               setProgress(30);
               return(res.info.cuisines.join(",").toLowerCase().includes('pizza'))
@@ -14,9 +14,9 @@ const BodyHeader = (props) => {
             setProgress(100);
           }}>
             <img src={PIZZA_IMG_URL} className='w-32 h-20 rounded-3xl m-2 shadow-md'/>
-            <p className='text-center font-semibold'>Pizza</p>
+            <p className='text-center  font-semibold'>Pizza</p>
           </div>
-          <div className="cursor-pointer" onClick={()=>{
+          <div className="cursor-pointer hover:text-orange-400" onClick={()=>{
             setProgress(30);
             setFilteredList(listOfRestaurant.filter((res)=>{
               return(res.info.cuisines.join(",").toLowerCase().includes('north indian'))
@@ -26,7 +26,7 @@ const BodyHeader = (props) => {
             <img src={NORTH_IMG_URL} className='w-32 h-20 rounded-3xl m-2 shadow-md'/>
             <p className='text-center font-semibold'>North Indian</p>
           </div>
-          <div className="cursor-pointer" onClick={()=>{
+          <div className="cursor-pointer hover:text-orange-400" onClick={()=>{
             setProgress(30);
             setFilteredList(listOfRestaurant.filter((res)=>{
               return(res.info.cuisines.join(",").toLowerCase().includes('ice cream'))
@@ -36,7 +36,7 @@ const BodyHeader = (props) => {
             <img src={IceCreams_IMG_URL} className='w-32 h-20 rounded-3xl m-2 shadow-md'/>
             <p className='text-center font-semibold'>Ice Cream</p>
           </div>
-          <div className="cursor-pointer" onClick={()=>{
+          <div className="cursor-pointer hover:text-orange-400" onClick={()=>{
             setProgress(30);
             setFilteredList(listOfRestaurant.filter((res)=>{
               return(res.info.cuisines.join(",").toLowerCase().includes('chinese'))
@@ -46,7 +46,7 @@ const BodyHeader = (props) => {
             <img src={CHINESE_IMG_URL} className='w-32 h-20 rounded-3xl m-2 shadow-md'/>
             <p className='text-center font-semibold'>Chinese</p>
           </div>
-          <div className="cursor-pointer" onClick={()=>{
+          <div className="cursor-pointer hover:text-orange-400" onClick={()=>{
             setProgress(30);
             setFilteredList(listOfRestaurant.filter((res)=>{
               return(res.info.cuisines.join(",").toLowerCase().includes('healthy food'))

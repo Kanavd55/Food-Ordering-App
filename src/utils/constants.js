@@ -13,3 +13,5 @@ export const CHINESE_IMG_URL="https://images.unsplash.com/photo-1585032226651-75
 export const IceCreams_IMG_URL="https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg";
 
 export const HEALTHY_IMG_URL="https://www.morelandobgyn.com/hubfs/Imported_Blog_Media/GettyImages-854725402-1.jpg";
+
+export const RESTAURANT_MENU_API_URL="https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=";
