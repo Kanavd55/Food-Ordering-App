@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { CDN_URL, CHINESE_IMG_URL, HEALTHY_IMG_URL, IceCreams_IMG_URL, NORTH_IMG_URL, PIZZA_IMG_URL, RES_URL } from '../utils/constants';
+import {  RES_URL } from '../utils/constants';
 import Shimmer from './Shimmer';
 import RestaurantCard from './RestaurantCard';
 import LoadingBar from 'react-top-loading-bar'
 import BodyHeader from './BodyHeader';
 import NotFound from './NotFound';
+import { Link } from 'react-router-dom';
 
 const Body = () => {
 
@@ -44,11 +45,12 @@ const Body = () => {
       });
       if(filter.length===0){
         setProgress(100);
+        setSearchText("");
         return (setFilteredList());
       }
       setFilteredList(filter);
+      setSearchText("");
       setProgress(100);
-      console.log(filteredList);
     }
 
     fastDelivery=()=>{
@@ -89,8 +91,9 @@ const Body = () => {
           <p className='text-2xl font-bold mt-8 p-2'>Top restaurant chains in Delhi</p>
               <div className='flex flex-wrap justify-start '>
                   {filteredList?.map((restaurant)=>{
-                      return (<RestaurantCard resData={restaurant} key={restaurant.info.id}/>)
-                  })}
+                      return (
+                      <Link to={"/restaurants/"+restaurant.info.id} key={restaurant.info.id}><RestaurantCard  resData={restaurant} /></Link>
+                  )})}
                </div>
           </>
         ):<NotFound/> }

@@ -9,12 +9,12 @@ const BodyHeader = (props) => {
           <div className="cursor-pointer" onClick={()=>{
             setFilteredList(listOfRestaurant.filter((res)=>{
               setProgress(30);
-              return(res.info.cuisines.join(",").toLowerCase().includes('burger'))
+              return(res.info.cuisines.join(",").toLowerCase().includes('pizza'))
             }))
             setProgress(100);
           }}>
             <img src={PIZZA_IMG_URL} className='w-32 h-20 rounded-3xl m-2 shadow-md'/>
-            <p className='text-center font-semibold'>Burger</p>
+            <p className='text-center font-semibold'>Pizza</p>
           </div>
           <div className="cursor-pointer" onClick={()=>{
             setProgress(30);

@@ -1,5 +1,6 @@
 import React from "react";
 import {LOGO_URL}  from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,19 +11,19 @@ const Navbar = () => {
         <div className="flex items-center">
             <ul className="flex font-light text-xl">
                 <li className="m-4 p-5">
-                    Home
+                    <Link to="/">Home</Link>
                 </li>
                 <li className="m-4 p-5">
-                    About Us
+                <Link to="/about">About Us</Link>
                 </li>
                 <li className="m-4 p-5">
-                    Grocery 
+                <Link to="/grocery">Grocery</Link> 
                 </li>
                 <li className="m-4 p-5">
-                    🔎 Search
+                <Link to="/careers">Careers</Link>
                 </li>
                 <li className="m-4 p-5">
-                    🛒 Cart 
+                    <Link to="/cart">🛒 Cart</Link> 
                 </li>
             </ul>
         </div>    
