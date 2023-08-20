@@ -11,7 +11,7 @@ const RestaurantCard = (props) => {
         <div className='my-3 rounded-lg text-gray-800 font-bold'>{name}</div>
         <div className='my-1 rounded-lg font-semibold'>{costForTwo}</div>
         <div className='my-1 rounded-lg'>⭐ {avgRating}</div>
-        <p className='my-1 rounded-lg break-words text-gray-500'>{cuisines.slice(0,6).join(",")}</p>
+        <p className='my-1 rounded-lg break-words text-gray-500'>{cuisines.slice(0,3).join(",")}</p>
   </div>
   )
 }

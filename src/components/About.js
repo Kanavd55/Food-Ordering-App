@@ -26,7 +26,7 @@ class About extends React.Component{
         const {avatar_url,name,location}=this.state.userInfo;
         return(
             <div>
-                <div className='w-full h-auto bg-orange-300 p-6 text-lg mb-3  text-center shadow-lg'>
+                <div className='w-full h-auto bg-orange-300 p-6 mb-3 text-xs sm:text-base text-center shadow-lg'>
                     <div className=' mx-auto p-1'>
                         <div className='flex justify-center'>
                             <img src={LOGO_URL} className=' h-16'/>
@@ -38,20 +38,23 @@ class About extends React.Component{
                     the app implememnts Shimmer UI,react-top-loader feature and lazy loading.
                     </p>
                 </div>
-                <div className='w-full h-auto p-6 flex flex-wrap font-semibold mb-3 justify-around'>
+                <div className='w-full h-auto p-6 flex flex-wrap font-semibold text-sm sm:text-lg mb-3 justify-around'>
                 <div className='m-2 p-2'>
                         <p className='m-2 p-2'>System Engineer</p>
                         <p className='m-2 p-2'>Tata Consultancy Services</p>
-                        <p className='m-2 p-2'>https://github.com/Kanavd55</p>
+                        <p className='m-2 p-2'>9096473197/8830765812</p>
+                        <p className='m-2 p-2'>{location}</p>
+                        <p className='m-2 p-2'></p>
                     </div>
                     <div>
                     <img src={avatar_url} className='rounded-full h-40' ></img>
                         <p className='font-bold m-2 p-2'>Mr. {name}</p>
                     </div>
                     <div className='m-2 p-2'>
-                    <p className='m-2 p-2'>📧 kanavdahat55@gmail.com</p>
-                        <p className='m-2 p-2'>📱 9096473197/8830765812</p>
-                        <p className='m-2 p-2'>🏠 {location}</p>
+                    <div className='m-2 p-2 flex justify-start'><img  className="w-5 m-1" src="https://cdn-icons-png.flaticon.com/128/3291/3291695.png"/> <span>https://github.com/Kanavd55</span></div>
+                    <div className='m-2 p-2 flex justify-start'><img  className="w-5 m-1" src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"/> <span>https://www.linkedin.com/in/kd28/</span></div>
+                    <div className='m-2 p-2 flex justify-start'><img  className="w-5 m-1" src="https://cdn-icons-png.flaticon.com/128/732/732200.png"/> <span>kanavdahat55@gmail.com</span></div>
+                    <div className='m-2 p-2 flex justify-start'><img  className="w-5 m-1" src="https://cdn-icons-png.flaticon.com/128/174/174855.png"/> <span>https://www.instagram.com/kanavvv_/</span></div>
                     </div>
                 </div>
             </div>
