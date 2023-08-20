@@ -1,35 +1,34 @@
-import React from "react";
-import {LOGO_URL}  from "../utils/constants";
+import React, { useState } from "react";
+import {LOGO_URL, NAV_CROSS_IMG_URL, NAV_IMG_URL}  from "../utils/constants";
 import { Link } from "react-router-dom";
-import useOnlineStatus from "../utils/useOnlineStatus";
+import NavLinks from "./NavLinks";
 
 const Navbar = () => {
 
-    const onlineStatus=useOnlineStatus();
+    const [showLinks,setShowLinks]=useState(false);
+
   return (
-    <div className="bg-pink-50 w-full flex justify-between p-2 shadow-lg mb-4">
-        <div>
-            <img className="w-28" src={LOGO_URL} />
+    <div className="bg-pink-50">
+    <div className=" w-full flex justify-between p-2">
+        <div className="p-1">
+            <img className="w-12 md:w-28" src={LOGO_URL} />
         </div>
         <div className="flex items-center">
-            <ul className="flex font-light text-sm md:text-xl">
-                <li className="m-4 p-5  hover:text-orange-600">
-                    <Link to="/">Home</Link>
-                </li>
-                <li className="m-4 p-5  hover:text-orange-600">
-                <Link to="/about">About Us</Link>
-                </li>
-                <li className="m-4 p-5  hover:text-orange-600">
-                <Link to="/grocery">Grocery</Link> 
-                </li>
-                <li className="m-4 p-5 hover:text-orange-600">
-                    <Link to="/cart" >🛒 Cart</Link> 
-                </li>
-                <li className="m-4 p-6 text-sm ">
-                    Online Status:{onlineStatus ? "🟢": "🔴"}
-                </li>
-            </ul>
-        </div>    
+             <ul className="hidden md:flex font-light text-sm md:text-xl">
+             <NavLinks/>
+             </ul>
+        </div>
+        <div className="md:hidden p-2 w-12">
+            <button onClick={()=>setShowLinks(!showLinks)}>
+                {showLinks ?(<img src={NAV_CROSS_IMG_URL}/>):(<img src={NAV_IMG_URL}/>)}
+            </button>
+        </div>  
+    </div>
+    { showLinks ? (
+        <ul className="font-light text-center w-full text-sm">
+        <NavLinks/>
+        </ul>
+    ):("")}
     </div>
   )
 }

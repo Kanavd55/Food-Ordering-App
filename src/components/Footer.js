@@ -50,7 +50,7 @@ const Footer = () => {
                     Contact Us
                 </li>
                 <li className='m-2'>
-                    6/51,Vijay Nagar,Delhi-110009
+                    Vijay Nagar,Delhi-110009
                 </li>
                 <li className='m-2'>
                     9096473197
