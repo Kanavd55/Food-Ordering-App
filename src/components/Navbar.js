@@ -25,7 +25,7 @@ const Navbar = () => {
                 <li className="m-4 p-5 hover:text-orange-600">
                     <Link to="/cart" >🛒 Cart</Link> 
                 </li>
-                <li className="m-4 p-5 ">
+                <li className="m-4 p-6 text-sm ">
                     Online Status:{onlineStatus ? "🟢": "🔴"}
                 </li>
             </ul>

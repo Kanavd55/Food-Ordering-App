@@ -6,6 +6,8 @@ import LoadingBar from 'react-top-loading-bar'
 import BodyHeader from './BodyHeader';
 import NotFound from './NotFound';
 import { Link } from 'react-router-dom';
+import useOnlineStatus from '../utils/useOnlineStatus';
+import Offline from './Offline';
 
 const Body = () => {
 
@@ -13,6 +15,7 @@ const Body = () => {
     const [filteredList,setFilteredList]=useState();
     const [progress, setProgress] = useState(0)
     const [searchText,setSearchText]=useState("");
+    const onlineStatus=useOnlineStatus();
 
     useEffect(()=>{
         fetchRestaurantList();
@@ -64,7 +67,9 @@ const Body = () => {
 
   return (
     <>
-    {listOfRestaurant ? (<div className='w-10/12 mx-auto'>
+    {onlineStatus ? (
+      <>
+      {listOfRestaurant ? (<div className='w-10/12 mx-auto'>
         <LoadingBar
         color='#f11946'
         progress={progress}
@@ -98,6 +103,9 @@ const Body = () => {
           </>
         ):<NotFound/> }
     </div>):(<Shimmer/>)}
+      </>
+    ):<Offline/>}
+    
     </>
     
   )

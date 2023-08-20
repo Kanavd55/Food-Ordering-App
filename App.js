@@ -5,11 +5,13 @@ import Footer from "./src/components/Footer";
 import Body from "./src/components/Body";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import About from "./src/components/About";
-import Careers from "./src/components/Careers";
-import Grocery from "./src/components/Grocery";
 import Cart from "./src/components/Cart";
 import Error from "./src/components/Error";
 import RestaurantMenu from "./src/components/RestaurantMenu";
+import { lazy,Suspense } from "react";
+import Shimmer from "./src/components/Shimmer";
+
+const Grocery=lazy(()=>import("./src/components/Grocery"));
 
 const AppLayout=()=>{
     return(
@@ -36,12 +38,10 @@ const appRouter=createBrowserRouter([
                 element:<About/>
             },
             {
-                path:"/careers",
-                element:<Careers/>
-            },
-            {
                 path:"/grocery",
-                element:<Grocery/>
+                element:<Suspense fallback={<Shimmer/>}>
+                    <Grocery/>
+                </Suspense>
             },
             {
                 path:"/cart",
