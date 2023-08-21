@@ -31,11 +31,13 @@ const appRouter=createBrowserRouter([
         children:[
             {
                 path:"/",
-                element:<Body/>
+                element:<Body/>,
+                errorElement:<Error/>
             },
             {
                 path:"/about",
-                element:<About/>
+                element:<About/>,
+                errorElement:<Error/>
             },
             {
                 path:"/grocery",
@@ -45,11 +47,13 @@ const appRouter=createBrowserRouter([
             },
             {
                 path:"/cart",
-                element:<Cart/>
+                element:<Cart/>,
+                errorElement:<Error/>
             },
             {
                 path:"/restaurants/:resId",
-                element:<RestaurantMenu/>
+                element:<RestaurantMenu/>,
+                errorElement:<Error/>
             }
         ],
     }

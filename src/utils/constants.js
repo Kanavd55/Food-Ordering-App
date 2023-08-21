@@ -35,3 +35,5 @@ export const LINKEDIN_IMG_URL="https://cdn-icons-png.flaticon.com/128/3536/35365
 export const INSTAGRAM_IMG_URL="https://cdn-icons-png.flaticon.com/128/174/174855.png";
 
 export const GMAIL_IMG_URL="https://cdn-icons-png.flaticon.com/128/732/732200.png";
+
+export const ITEM_IMG_URL="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/";

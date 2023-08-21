@@ -16,7 +16,7 @@ const NavLinks = () => {
             <Link to="/grocery">Grocery</Link>
         </li>
         <li className='m-4 p-5 hover:text-orange-600'>
-            <Link to="/">Cart 🛒 </Link>
+            <Link to="/cart">Cart 🛒 </Link>
         </li>
         <li className='m-4 p-6 text-sm'>
             {onlineStatus ? "Online 🟢": "Offline 🔴"}
