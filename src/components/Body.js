@@ -22,13 +22,30 @@ const Body = () => {
     },[])
 
     const fetchRestaurantList=async ()=>{
+      try{
         const data=await fetch(RES_URL);
         setProgress(50);
         const json=await data.json();
-        const restaurants=json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-        setListOfRestaurant(restaurants);
-        setFilteredList(restaurants);
+
+        async function checkJsonData(jsonData){
+          for(let i=0;i<jsonData?.data?.cards.length;i++){
+            let checkData = jsonData?.data?.cards[i]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+            if(checkData!==undefined){
+              return checkData;
+            }
+          }
+        }
+
+        const resData=await checkJsonData(json);
+
+        setListOfRestaurant(resData);
+        setFilteredList(resData);
         setProgress(100);
+
+      }catch(e){
+        console.log(e);
+      }
+        
     }
 
     filterTopRated=()=>{
@@ -92,7 +109,7 @@ const Body = () => {
         { filteredList ? (
           <>
           <p className='text-2xl font-bold mt-8 p-2'>Top restaurant chains in Delhi</p>
-              <div className='flex flex-wrap justify-start '>
+              <div className='flex flex-wrap justify-start  '>
                   {filteredList?.map((restaurant)=>{
                       return (
                       <Link to={"/restaurants/"+restaurant.info.id} key={restaurant.info.id}><RestaurantCard  resData={restaurant} /></Link>

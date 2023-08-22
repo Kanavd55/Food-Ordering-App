@@ -5,7 +5,7 @@ const BodyHeader = (props) => {
     const {listOfRestaurant,setFilteredList,setProgress,filteredList}=props;
 
   return (
-    <div className='flex flex-wrap justify-between shadow-lg rounded-3xl p-4'>
+    <div className='flex flex-wrap justify-center md:justify-between shadow-lg rounded-3xl p-4'>
           <div className="cursor-pointer hover:text-orange-400" onClick={()=>{
             setFilteredList(listOfRestaurant.filter((res)=>{
               setProgress(30);

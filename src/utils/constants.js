@@ -2,7 +2,7 @@ export const LOGO_URL="https://freepngimg.com/save/152795-food-burger-junk-hq-im
 
 export const CDN_URL="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
-export const RES_URL="https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7108654&lng=77.20314929999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+export const RES_URL="https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7108654&lng=77.20314929999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
 
 export const PIZZA_IMG_URL="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?w=2000";
 
@@ -14,7 +14,7 @@ export const IceCreams_IMG_URL="https://cdn.britannica.com/50/80550-050-5D392AC7
 
 export const HEALTHY_IMG_URL="https://www.morelandobgyn.com/hubfs/Imported_Blog_Media/GettyImages-854725402-1.jpg";
 
-export const RESTAURANT_MENU_API_URL="https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=";
+export const RESTAURANT_MENU_API_URL="https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=";
 
 export const NAV_IMG_URL="https://cdn-icons-png.flaticon.com/128/5107/5107718.png";
 

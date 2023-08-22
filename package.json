@@ -2,7 +2,6 @@
   "name": "food-app",
   "version": "1.0.0",
   "description": "Food Ordering App using react",
-  "main": "App.js",
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",

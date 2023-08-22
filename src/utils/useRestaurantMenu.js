@@ -12,7 +12,7 @@ const useRestaurantMenu = (resId) => {
     const fetchRestaurantInfo=async ()=>{
         const data=await fetch(RESTAURANT_MENU_API_URL+resId);
         const json=await data.json();
-        json ? (setResInfo(json)) :setResInfo(null);
+        json.data.cards ? setResInfo(json.data) : setResInfo(null);
     }
 
     return resInfo;

@@ -37,13 +37,11 @@ const appRouter=createBrowserRouter([
         children:[
             {
                 path:"/",
-                element:<Body/>,
-                errorElement:<Error/>
+                element:<Body/>
             },
             {
                 path:"/about",
                 element:<About/>,
-                errorElement:<Error/>
             },
             {
                 path:"/grocery",
@@ -54,7 +52,6 @@ const appRouter=createBrowserRouter([
             {
                 path:"/cart",
                 element:<Cart/>,
-                errorElement:<Error/>
             },
             {
                 path:"/restaurants/:resId",
