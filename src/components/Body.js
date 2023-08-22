@@ -8,6 +8,7 @@ import NotFound from './NotFound';
 import { Link } from 'react-router-dom';
 import useOnlineStatus from '../utils/useOnlineStatus';
 import Offline from './Offline';
+import { toast } from 'react-hot-toast';
 
 const Body = () => {
 
@@ -53,6 +54,7 @@ const Body = () => {
       setFilteredList(listOfRestaurant.filter((res)=>{
             return(res.info.avgRating>=4)
       }));
+      toast("Top rated results");
       setProgress(100);
     }
 
@@ -63,10 +65,12 @@ const Body = () => {
       });
       if(filter.length===0){
         setProgress(100);
+        toast("Not found")
         setSearchText("");
         return (setFilteredList());
       }
       setFilteredList(filter);
+      toast("Search results found");
       setSearchText("");
       setProgress(100);
     }
@@ -76,6 +80,7 @@ const Body = () => {
       setFilteredList(listOfRestaurant.filter((res)=>{
             return(res.info.sla.deliveryTime<=30);
       }));
+      toast("Fast delivery results");
       setProgress(100);
     }
     
@@ -104,6 +109,7 @@ const Body = () => {
           setProgress(30)
           setFilteredList(listOfRestaurant);
           setProgress(100);
+          toast("All restaurants")
         }} className='p-2 m-2 w-44 bg-green-400 hover:bg-green-300 rounded-lg font-semibold'>All Restaurants</button>
         </div>
         { filteredList ? (

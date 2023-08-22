@@ -55,7 +55,7 @@ const Cart = () => {
 
             )
           })}
-          <div className='flex justify-between'>
+          <div className='flex justify-between flex-wrap md:flex-nowrap'>
           <button onClick={handleClear} className='p-2 m-2 rounded-lg shadow-md font-semibold text-center bg-yellow-200 hover:bg-yellow-300'>Clear Cart</button>
           <p className='p-2 m-2 text-center font-bold'>Total Amount : Rs. {Amount}/-</p>
           <button onClick={handleOrder} className='p-2 m-2 rounded-lg font-semibold shadow-md text-center bg-green-400 hover:bg-green-500'>Place Order</button>
