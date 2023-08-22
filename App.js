@@ -12,17 +12,19 @@ import { lazy,Suspense } from "react";
 import Shimmer from "./src/components/Shimmer";
 import appStore from "./src/utils/appStore";
 import { Provider } from "react-redux";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Grocery=lazy(()=>import("./src/components/Grocery"));
 
 const AppLayout=()=>{
     return(
         <Provider store={appStore}>
-        <div>
+             <div>
             <Navbar/>
             <Outlet/>
             <Footer/>
         </div>
+        <Toaster/>
         </Provider>
     )
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../utils/cartSlice';
+import { toast } from 'react-hot-toast';
+
 
 const ItemDetails = (props) => {
 
@@ -9,6 +11,7 @@ const ItemDetails = (props) => {
 
     const handleAddItem=(item)=>{
         dispatch(addItem(item))
+        toast("Item added to the cart");
     }
 
   return (
