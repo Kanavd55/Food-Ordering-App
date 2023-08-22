@@ -22,11 +22,9 @@ const Body = () => {
     },[])
 
     const fetchRestaurantList=async ()=>{
-        setProgress(20);
         const data=await fetch(RES_URL);
         setProgress(50);
         const json=await data.json();
-        setProgress(80);
         const restaurants=json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
         setListOfRestaurant(restaurants);
         setFilteredList(restaurants);

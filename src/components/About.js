@@ -2,6 +2,7 @@ import React from 'react';
 import { COMPANY_IMG_URL, ENGINNER_IMG_URL, 
     GITHUB_IMG_URL, GMAIL_IMG_URL, INSTAGRAM_IMG_URL, 
     LINKEDIN_IMG_URL, LOCATION_IMG_URL, LOGO_URL, PHONE_IMG_URL } from '../utils/constants';
+import UserContext from '../utils/userContext';
 
 class About extends React.Component{
 
@@ -44,6 +45,7 @@ class About extends React.Component{
                 <div className='mt-4'>
                     <img src={avatar_url} className='rounded-full h-40' ></img>
                         <p className='font-bold m-2 p-2'>Mr. {name}</p>
+                        {/*<p className='font-bold m-2 p-2'><UserContext.Consumer>{({loggedInUser})=><h1>{loggedInUser}</h1>}</UserContext.Consumer></p>*/}
                     </div>
                 <div className='m-2 p-2'>
                     <div className='m-2 p-2 flex justify-start'><img  className="w-5 m-1" src={ENGINNER_IMG_URL}/> <span>System Engineer</span></div>

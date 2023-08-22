@@ -3,12 +3,13 @@ import {LOGO_URL, NAV_CROSS_IMG_URL, NAV_IMG_URL}  from "../utils/constants";
 import { Link } from "react-router-dom";
 import NavLinks from "./NavLinks";
 
+
 const Navbar = () => {
 
     const [showLinks,setShowLinks]=useState(false);
 
   return (
-    <div className="bg-pink-50">
+    <div className="bg-pink-50 shadow-md">
     <div className=" w-full flex justify-between p-2">
         <div className="p-1">
             <img className="w-12 md:w-28" src={LOGO_URL} />
