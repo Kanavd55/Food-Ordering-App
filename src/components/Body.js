@@ -18,12 +18,14 @@ const Body = () => {
     const [searchText,setSearchText]=useState("");
     const onlineStatus=useOnlineStatus();
 
+
     useEffect(()=>{
         fetchRestaurantList();
     },[])
 
     const fetchRestaurantList=async ()=>{
       try{
+        
         const data=await fetch(RES_URL);
         setProgress(50);
         const json=await data.json();
@@ -61,7 +63,8 @@ const Body = () => {
     filterSearch=()=>{
       setProgress(30);
       const filter=listOfRestaurant.filter((res)=>{
-            return(res.info.name.includes(searchText.toLowerCase()) || res.info.cuisines.join(",").toLowerCase().includes(searchText.toLowerCase()))
+        console.log(res.info.name)
+            return(res.info.name.toLowerCase().includes(searchText.toLowerCase()) || res.info.cuisines.join(",").toLowerCase().includes(searchText.toLowerCase()))
       });
       if(filter.length===0){
         setProgress(100);

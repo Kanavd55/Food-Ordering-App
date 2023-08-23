@@ -16,7 +16,7 @@ const Grocery = () => {
           </div>
           <div className='w-auto p-3 m-3 ml-auto'>
             <div className='m-3'>
-              <p className='text-3xl font-bold'>Newly added groceries feature</p>
+              <h1 className='text-3xl font-bold'>Newly added groceries feature</h1>
               <p className='text-3xl font-bold'>Order now!</p>
             </div>
             <div className='m-3 my-12'>
