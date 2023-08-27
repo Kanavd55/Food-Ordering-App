@@ -3,6 +3,8 @@ import { CDN_URL } from '../utils/constants';
 
 const RestaurantCard = (props) => {
 
+  console.log(props);
+
     const {name,costForTwo,avgRating,cuisines,cloudinaryImageId}=props.resData.info;
 
   return (

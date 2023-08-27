@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1693160265324" clover="3.2.0">
-  <project timestamp="1693160265325" name="All files">
-    <metrics statements="50" coveredstatements="42" conditionals="8" coveredconditionals="4" methods="14" coveredmethods="7" elements="72" coveredelements="53" complexity="0" loc="50" ncloc="50" packages="2" files="9" classes="9"/>
+<coverage generated="1693160906689" clover="3.2.0">
+  <project timestamp="1693160906689" name="All files">
+    <metrics statements="54" coveredstatements="46" conditionals="8" coveredconditionals="4" methods="15" coveredmethods="8" elements="77" coveredelements="58" complexity="0" loc="54" ncloc="54" packages="2" files="10" classes="10"/>
     <package name="components">
-      <metrics statements="13" coveredstatements="12" conditionals="8" coveredconditionals="4" methods="6" coveredmethods="5"/>
+      <metrics statements="17" coveredstatements="16" conditionals="8" coveredconditionals="4" methods="7" coveredmethods="6"/>
       <file name="Grocery.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\components\Grocery.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
@@ -23,6 +23,13 @@
         <line num="9" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
+      </file>
+      <file name="RestaurantCard.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\components\RestaurantCard.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
       </file>
       <file name="sum.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\components\sum.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -48,26 +55,26 @@
       </file>
       <file name="constants.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\utils\constants.js">
         <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
       </file>
       <file name="useOnlineStatus.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\utils\useOnlineStatus.js">
         <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>

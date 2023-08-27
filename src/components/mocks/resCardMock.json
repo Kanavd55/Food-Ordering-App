@@ -1,0 +1,88 @@
+{
+    "info": {
+        "id": "46857",
+        "name": "Bakingo",
+        "cloudinaryImageId": "t4krbxhzmffz1l2yxten",
+        "locality": "Singhal Pur",
+        "areaName": "Ashok vihar",
+        "costForTwo": "₹300 for two",
+        "cuisines": [
+            "Bakery",
+            "Desserts",
+            "Beverages",
+            "Snacks"
+        ],
+        "avgRating": 4.3,
+        "feeDetails": {
+            "restaurantId": "46857",
+            "fees": [
+                {
+                    "name": "BASE_DISTANCE",
+                    "fee": 9100
+                },
+                {
+                    "name": "BASE_TIME"
+                },
+                {
+                    "name": "ANCILLARY_SURGE_FEE"
+                }
+            ],
+            "totalFee": 9100
+        },
+        "parentId": "3818",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "5K+",
+        "sla": {
+            "deliveryTime": 25,
+            "lastMileTravel": 7,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25 mins",
+            "lastMileTravelString": "7.0 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2023-08-28 00:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "discountCalloutInfo": {
+                "message": "Free Delivery",
+                "logoCtx": {
+                    "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+                }
+            }
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/bakingo-singhal-pur-ashok-vihar-delhi-46857",
+        "type": "WEBLINK"
+    }
+}
