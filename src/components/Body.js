@@ -51,19 +51,18 @@ const Body = () => {
         
     }
 
-    filterTopRated=()=>{
+    const filterTopRated=()=>{
       setProgress(30);
       setFilteredList(listOfRestaurant.filter((res)=>{
             return(res.info.avgRating>=4)
-      }));
+          }));
       toast("Top rated results");
       setProgress(100);
     }
 
-    filterSearch=()=>{
+    const filterSearch=()=>{
       setProgress(30);
       const filter=listOfRestaurant.filter((res)=>{
-        console.log(res.info.name)
             return(res.info.name.toLowerCase().includes(searchText.toLowerCase()) || res.info.cuisines.join(",").toLowerCase().includes(searchText.toLowerCase()))
       });
       if(filter.length===0){
@@ -78,7 +77,7 @@ const Body = () => {
       setProgress(100);
     }
 
-    fastDelivery=()=>{
+    const fastDelivery=()=>{
       setProgress(30);
       setFilteredList(listOfRestaurant.filter((res)=>{
             return(res.info.sla.deliveryTime<=30);
@@ -87,7 +86,6 @@ const Body = () => {
       setProgress(100);
     }
     
-
   return (
     <>
     {onlineStatus ? (
@@ -104,9 +102,9 @@ const Body = () => {
         <div className='flex justify-between flex-wrap shadow-md rounded-lg'>
           <div className='p-2 m-2 w-72 flex justify-start rounded-lg  bg-green-400'>
             <input type='text' placeholder='Restaurant or Cuisine' value={searchText} onChange={(e)=>setSearchText(e.target.value)} className='bg-transparent font-semibold active:border-none m-1 p-2'/>
-            <button onClick={filterSearch} className= 'w-12  rounded-full hover:bg-green-300'>🔎</button>
+            <button data-testid="searchBtn" onClick={filterSearch} className= 'w-12  rounded-full hover:bg-green-300'>🔎</button>
             </div>
-        <button onClick={filterTopRated} className='p-2 m-2 w-44 bg-green-400 hover:bg-green-300 rounded-lg font-semibold'>Ratings 4.0 ⭐</button>
+        <button data-testid="topRatedBtn" onClick={filterTopRated} className='p-2 m-2 w-44 bg-green-400 hover:bg-green-300 rounded-lg font-semibold'>Ratings 4.0 ⭐</button>
         <button onClick={fastDelivery} className='p-2 m-2 w-44 bg-green-400 hover:bg-green-300 rounded-lg font-semibold'>Fast Delivery</button>
         <button onClick={()=>{
           setProgress(30)
