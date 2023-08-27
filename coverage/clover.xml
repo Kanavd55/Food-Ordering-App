@@ -1,16 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1692826708082" clover="3.2.0">
-  <project timestamp="1692826708082" name="All files">
-    <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="6" coveredelements="6" complexity="0" loc="4" ncloc="4" packages="1" files="2" classes="2"/>
-    <file name="Grocery.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\components\Grocery.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
-    </file>
-    <file name="sum.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\components\sum.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="1" type="stmt"/>
-    </file>
+<coverage generated="1693160265324" clover="3.2.0">
+  <project timestamp="1693160265325" name="All files">
+    <metrics statements="50" coveredstatements="42" conditionals="8" coveredconditionals="4" methods="14" coveredmethods="7" elements="72" coveredelements="53" complexity="0" loc="50" ncloc="50" packages="2" files="9" classes="9"/>
+    <package name="components">
+      <metrics statements="13" coveredstatements="12" conditionals="8" coveredconditionals="4" methods="6" coveredmethods="5"/>
+      <file name="Grocery.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\components\Grocery.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="NavLinks.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\components\NavLinks.js">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="Navbar.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\components\Navbar.js">
+        <metrics statements="4" coveredstatements="3" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+      </file>
+      <file name="sum.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\components\sum.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="37" coveredstatements="30" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="2"/>
+      <file name="appStore.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\utils\appStore.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="cartSlice.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\utils\cartSlice.js">
+        <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
+      <file name="constants.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\utils\constants.js">
+        <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+      </file>
+      <file name="useOnlineStatus.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\utils\useOnlineStatus.js">
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="userContext.js" path="C:\Users\Kanav\OneDrive\Desktop\React Apps\Food App\src\utils\userContext.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
