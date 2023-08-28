@@ -37,7 +37,7 @@ const Cart = () => {
   return (
     <div>
     {!cartItems.length==0 ?(
-      <div className='w-8/12 mx-auto my-2 flex flex-col'>
+      <div data-testid="cartItem" className='w-8/12 mx-auto my-2 flex flex-col'>
           {cartItems.map((c,index)=>{
             return (
               <div key={c.card.info.id} className='flex flex-wrap md:flex-nowrap justify-between border-b border-slate-300 m-2 '>

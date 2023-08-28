@@ -18,7 +18,7 @@ const ItemDetails = (props) => {
     <>
     {itemCards.map((c)=>{
         return(
-            <div key={c.card.info.id} className='flex flex-wrap md:flex-nowrap justify-between border-b border-slate-300 m-2 '>
+            <div data-testid="itemCard" key={c.card.info.id} className='flex flex-wrap md:flex-nowrap justify-between border-b border-slate-300 m-2 '>
             <div className='m-2 w-9/12 p-2'>
                 <p className='m-1 my-3 text-xs'>{c.card.info.isVeg ? "🟩 Veg" : "🟥 Non-Veg"}</p>
                 <p className='font-semibold m-1'>{c.card.info.name}</p>
