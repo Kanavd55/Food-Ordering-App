@@ -16,7 +16,7 @@ const ItemDetails = (props) => {
 
   return (
     <>
-    {itemCards.map((c)=>{
+    {itemCards?.map((c)=>{
         return(
             <div data-testid="itemCard" key={c.card.info.id} className='flex flex-wrap md:flex-nowrap justify-between border-b border-slate-300 m-2 '>
             <div className='m-2 w-9/12 p-2'>

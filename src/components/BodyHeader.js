@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { PIZZA_IMG_URL,IceCreams_IMG_URL,NORTH_IMG_URL,CHINESE_IMG_URL,HEALTHY_IMG_URL } from '../utils/constants'
 import { toast } from 'react-hot-toast';
 
 const BodyHeader = (props) => {
     const {listOfRestaurant,setFilteredList,setProgress,filteredList}=props;
+    const [open,setOpen]=useState(true);
+
 
   return (
     <div className='flex flex-wrap justify-center md:justify-between shadow-lg rounded-3xl p-4'>

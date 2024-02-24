@@ -29,7 +29,6 @@ const Body = () => {
         const data=await fetch(RES_URL);
         setProgress(50);
         const json=await data.json();
-
         async function checkJsonData(jsonData){
           for(let i=0;i<jsonData?.data?.cards.length;i++){
             let checkData = jsonData?.data?.cards[i]?.card?.card?.gridElements?.infoWithStyle?.restaurants;

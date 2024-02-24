@@ -2,6 +2,7 @@ import React from 'react'
 import  {LOGO_URL}  from '../utils/constants'
 
 const Footer = () => {
+    const date=new Date().getFullYear();
   return (
     <div className='bg-purple-300 shadow-inner text-xs sm:text-base w-auto'>
         <div className='w-10/12 mx-auto h-auto bg-purple-300 flex-wrap items-center flex justify-around'>
@@ -10,7 +11,7 @@ const Footer = () => {
                 <img src={LOGO_URL} className=' h-10 sm:h-14'/>
                 <span className='font-semibold text-center p-2'>Foodie's Spot</span>
             </div>
-            <p>Copyright @2023. Foodie's Spot Incl.All rights reserved</p>     
+            <p>Copyright @{date}. Foodie's Spot Incl.All rights reserved</p>     
         </div>
         <div className='w-[40%] md:w-[20%] p-2'>
             <ul className='m-1 p-1'>
@@ -53,7 +54,7 @@ const Footer = () => {
                     Vijay Nagar,Delhi-110009
                 </li>
                 <li className='m-2'>
-                    9096473197
+                    9999999999
                 </li>
                 <li className='m-2 break-words'>
                     kanavdahat55@gmail.com
